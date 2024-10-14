@@ -13,6 +13,8 @@ dotenv.config();
 // app.use(bodyParser.json({ limit: '10mb', extended: true }))
 // app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 
+app.use(express.static('build'))
+
 app.use(express.json({ limit: '10mb' }))
 app.use(cors())
 
